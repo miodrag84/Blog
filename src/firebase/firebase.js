@@ -1,6 +1,14 @@
 import * as firebase from 'firebase';
 
 const config = {
+
+  // apiKey: "AIzaSyAevoHeOaNvbkuu2m-5GMcwlSwPuVTnjkA",
+  // authDomain: "blog-1bf33.firebaseapp.com",
+  // databaseURL: "https://blog-1bf33.firebaseio.com",
+  // projectId: "blog-1bf33",
+  // storageBucket: "",
+  // messagingSenderId: "461967880087"
+
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.FIREBASE_DATABASE_URL,

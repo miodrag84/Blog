@@ -10,12 +10,26 @@ import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
 
+import getVisibleExpenses from './selectors/expenses';
+import { addExpense } from './actions/expenses';
+import { setTextFilter } from './actions/filters';
+
 const store = configureStore();
+
+const state = store.getState();
+const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+console.log(visibleExpenses);
+
+
 const jsx = (
   <Provider store={store}>
     <AppRouter />
   </Provider>
 );
+
+
+
+
 let hasRendered = false;
 const renderApp = () => {
   if (!hasRendered) {
@@ -25,6 +39,7 @@ const renderApp = () => {
 };
 
 ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+//ReactDOM.render(jsx, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
