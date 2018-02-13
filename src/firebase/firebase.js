@@ -2,19 +2,19 @@ import * as firebase from 'firebase';
 
 const config = {
 
-  // apiKey: "AIzaSyAevoHeOaNvbkuu2m-5GMcwlSwPuVTnjkA",
-  // authDomain: "blog-1bf33.firebaseapp.com",
-  // databaseURL: "https://blog-1bf33.firebaseio.com",
-  // projectId: "blog-1bf33",
-  // storageBucket: "",
-  // messagingSenderId: "461967880087"
+  apiKey: "AIzaSyAevoHeOaNvbkuu2m-5GMcwlSwPuVTnjkA",
+  authDomain: "blog-1bf33.firebaseapp.com",
+  databaseURL: "https://blog-1bf33.firebaseio.com",
+  projectId: "blog-1bf33",
+  storageBucket: "",
+  messagingSenderId: "461967880087"
 
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+  // apiKey: process.env.FIREBASE_API_KEY,
+  // authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  // databaseURL: process.env.FIREBASE_DATABASE_URL,
+  // projectId: process.env.FIREBASE_PROJECT_ID,
+  // storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  // messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
 firebase.initializeApp(config);
