@@ -38,22 +38,22 @@ export default class BlogForm extends React.Component {
     render() {
         return (
 
-<div>
+<div className="content-container">
 {this.state.error && <p>{this.state.error}</p>}
-<form onSubmit={this.onSubmit}>
-<input
+<form className="form" onSubmit={this.onSubmit}>
+<input className="text-input"
 type="text"
 value={this.state.description} 
 onChange={this.onDescriptionChange}
 placeholder="Add Title"
 />
-<textarea
+<textarea className="textarea"
 placeholder="Post body"
 value={this.state.note}
 onChange={this.onNoteChange}
 >
 </textarea>
-<button>Save post</button>
+<button className="button">Save post</button>
 </form>
 </div>
 

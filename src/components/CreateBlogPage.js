@@ -5,8 +5,8 @@ import BlogForm from './BlogForm';
 import { addExpense } from '../actions/expenses';
 
 const AddExpensePage = (props) => (
-  <div>
-    <h1>Add title and body</h1>
+  <div className="content-container">
+    <h3>Add title and body</h3>
     <BlogForm
       onSubmit={(expense) => {
         props.dispatch(addExpense(expense));

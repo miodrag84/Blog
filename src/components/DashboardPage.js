@@ -10,15 +10,15 @@ import ExpenseListFilters from './ExpenseListFilters';
 
 const DashboardPage = () => (
   
-  <div>
-
+  <div className="content-container">
+  <h3>Posts</h3>
   <ExpenseListFilters />
   <ExpenseList />
   
   
 
   <Link to="/create">
-  <button type="button">
+  <button className="button" type="button">
        Add Post
   </button>
   </Link>
